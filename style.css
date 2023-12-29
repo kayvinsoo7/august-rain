@@ -50,3 +50,13 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.service-item img {
+    max-width: 100%; /* This ensures image is not larger than its container */
+    max-height: 200px; /* Adjust this value to fit your design */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
