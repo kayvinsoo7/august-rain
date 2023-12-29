@@ -118,3 +118,15 @@ footer {
 }
 /* Additional styles for responsiveness, typography, and color theming */
 /* ... */
+
+.hover li:hover {
+    background-color: #3978bc; /* Changes the background color on hover */
+    color: rgb(137, 56, 56); /* Changes the text color on hover */
+    opacity: 0.6;
+}
+
+/* Style for the active link */
+.hover li a.active {
+    background-color: #3978bc;
+    color: rgb(221, 211, 211);
+}
