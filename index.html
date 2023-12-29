@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>August Rain Consulting & Services</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> August Rain Consulting & Services Ltd </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <header class="site-header">
-        <img src="Logo.png" alt="August Rain Consulting & Services Logo" class="logo"
+    <header>
+        <img src="./img/logo_main.png" alt="August Rain Consulting & Services Logo" class="logo"
             style="object-fit:contain;
             width:100px;
             height:100px;
-            border: solid 1px #794848" />
+            border: solid 1px #ece4e4" />
 
-        <h1>August Rain Consulting & Services Ltd</h1>
-        <!-- Rest of the header content -->
+            <h1>August Rain Consulting & Services Ltd</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case_studies.html">Case Studies</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Hero section with a background image and some animation -->
-    <section class="hero">
-        <h1 class="fade-in">Empowering Smart Societies</h1>
-        <p class="fade-in">Driving innovation in government, academia, and industry.</p>
-        <!-- ... -->
-    </section>
-
-    <!-- Services section using grid layout -->
-    <section class="services-grid">
-        <!-- Individual service items -->
-        <div class="service-item zoom-in">
-            <img src="pencil_warehouse.png" alt="Warehouse Automation">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Empowering Smart Societies</h1>
+            <p class="fade-in">Driving innovation in government, academia, and industry.</p>
+        </div>
+    </div>
+    <section class="services">
+        <div class="service-item">
+            <img src="./img/warehouse.png" alt="Warehouse Automation">
             <h2>Industrial Optimization</h2>
             <p>Revolutionizing operations with advanced analytics and IoT integration.</p>
         </div>
-        <!-- ... other service items ... -->
+        <div class="service-item">
+            <img src="./img/data.png" alt="Data Analytics">
+            <h2>Data Analytics</h2>
+            <p>Transforming data into actionable insights for strategic decisions.</p>
+        </div>
+        <div class="service-item">
+            <img src="./img/sus.png" alt="Sustainable Development">
+            <h2>Sustainable Progress</h2>
+            <p>Commitment to energy, environment, and social advancements.</p>
+        </div>
     </section>
-
-    <footer class="site-footer">
+    <footer>
         <p>&copy; 2023 August Rain Consulting & Services. All rights reserved.</p>
     </footer>
 </body>
