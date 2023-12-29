@@ -32,12 +32,13 @@ header nav ul li a {
     font-weight: bold;
 }
 
-.intro {
+section {
     background-color: white;
+    margin: 1rem;
     padding: 2rem;
-    margin-top: 1rem;
-    text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
 footer {
