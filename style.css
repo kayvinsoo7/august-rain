@@ -1,20 +1,13 @@
 body {
-    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f9fa;
-    color: #333;
-    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #3978bc;
-    color: white;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    /* display: flex; */
-    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header nav ul {
@@ -34,53 +27,61 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+/* .texth2 {
+    color: aliceblue;
+    font-weight: bold;
+} */
+
+nav {
+    padding: 0 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
 
 section {
-    background-color: white;
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #958c8c;
+}
+
+button {
+    display: inline-block;
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #666;
 }
 
 footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #3978bc;
-    color: white;
-    position: fixed;
-    width: 100%;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 .service-item img {
     max-width: 100%; /* This ensures image is not larger than its container */
-    max-height: 200px; /* Adjust this value to fit your design */
+    max-height: 50px; /* Adjust this value to fit your design */
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
     border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
-}
-
-/* Fade-in animation for hero text */
-.fade-in {
-    animation: fadeIn 2s ease-in forwards;
-    opacity: 0;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-    /* ... */
+    /* padding-bottom: 1rem; */
 }
 
 .service-item {
@@ -88,45 +89,8 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-}
-
-/* Zoom-in animation on hover for service items */
-.service-item:hover, .service-item:focus {
-    transform: scale(1.05);
-}
-
-.zoom-in {
-    animation: zoomIn 0.5s ease-in forwards;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.9);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-/* Footer with flexbox */
-.site-footer {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    background: #0056b3;
-    /* ... */
-}
-/* Additional styles for responsiveness, typography, and color theming */
-/* ... */
-
-.hover li:hover {
-    background-color: #3978bc; /* Changes the background color on hover */
-    color: rgb(137, 56, 56); /* Changes the text color on hover */
-    opacity: 0.6;
-}
-
-/* Style for the active link */
-.hover li a.active {
-    background-color: #3978bc;
-    color: rgb(221, 211, 211);
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Vertically centers the items in the container */
+    justify-content: left; /* Horizontally centers the items */
+    gap: 10px; /* Adjust the gap as needed */
 }
